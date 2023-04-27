@@ -27,8 +27,7 @@ export const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item mx-3">
               <Link
-                to="/encuentraTienda"
-                className="nav-link active text-white py-3"
+                to="/Tienda" className="nav-link active text-white py-3"
                 aria-current="page"
               >
                 Encuentra tu tienda
@@ -74,10 +73,10 @@ export const Navbar = () => {
               </Link>
               <ul className="dropdown-menu dropdown-menu-lg-end text-white">
                 <li>
-                  <Link className="dropdown-item">Usuario</Link>
+                  <Link className="dropdown-item" to="/">Usuario</Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item">Mi Perfil</Link>
+                  <Link className="dropdown-item" to="/">Mi Perfil</Link>
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/ayuda">
@@ -86,7 +85,7 @@ export const Navbar = () => {
                 </li>
                 <hr className="dropdown-divider" />
                 <li>
-                  <Link className="dropdown-item">Salir</Link>
+                  <Link className="dropdown-item" to="/notFound">Salir</Link>
                 </li>
               </ul>
             </li>

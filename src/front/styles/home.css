@@ -5,3 +5,41 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+.site-title {
+    font-size: 2rem;
+  }
+  
+  #regPhoto {
+    position:relative;
+    width: 38vw;
+    height: 58vh;
+    object-fit: cover;
+  }
+  
+  /*
+  .nav li.active {
+    background-color: #555;
+  }
+  
+  .nav li:hover {
+    background-color: #777;
+  }
+  
+  */
+  
+  h1 {
+    position: relative;
+    font-size: 4vw;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+  
+  
+  
+  .dropdown-toggle::after {
+    display:none;
+  }
+  
+  a, u {
+    text-decoration: none;
+  }

@@ -1,8 +1,9 @@
+import React from 'react';
 import MVDP from '../../img/MVDP.jpg';
 
 
-export default function Noticias() {
-  return (
+export const Noticias = () => {
+    return (
     <div className="container-fluid position-relative d-inline-block">
       <h1 className="text-center">Noticias</h1>
       <hr className="hr" />

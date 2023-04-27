@@ -1,7 +1,8 @@
-import Mapa from '../../img/Mapa.jpeg';
+import React from 'react';
+import Mapa from '../../img/mapa.jpg';
 
 
-export default function Eventos() {
+const Eventos = () => {
     return (
         <div className="container-fluid position-relative d-inline-block">
             <h1 className="text-center">Eventos</h1>
@@ -25,3 +26,5 @@ export default function Eventos() {
         </div>
     );
 }
+
+export default Eventos

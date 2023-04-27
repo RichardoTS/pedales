@@ -12,7 +12,7 @@ const center = { lat: -33.742145, lng: -70.735680 };
 
 const position = { lat: -33.74200819688481, lng: -70.73546492713628 }
 const position2 = { lat: -33.74255488809652, lng: -70.73545760135589 } //-33.74255488809652, -70.73545760135589
-
+const position3 = { lat: -33.44905866636771, lng: -70.62807595201264 }
 
 function Maps() {
 
@@ -67,9 +67,14 @@ function Maps() {
         position={position}
       />
       <Marker
-        label= {"BiciBuin"}
+        label= {"Francisco Bikes"}
         onLoad={onLoad}
         position={position2}
+      />
+      <Marker
+        label= {"Richard's Bike"}
+        onLoad={onLoad}
+        position={position3}
       />
     </GoogleMap>
     </>

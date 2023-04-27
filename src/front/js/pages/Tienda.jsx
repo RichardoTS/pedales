@@ -1,9 +1,11 @@
-import Maps from '../pages/Maps';
+import React from 'react';
+import Maps from '../pages/Maps.jsx';
 
 
 
-export default function Comunidad() {
-  return (
+
+export const Tienda = () => {
+    return (
     <div className="container-fluid text-center position-relative d-inline-block">
       <h1>Encuentra tu tienda</h1>
       <hr className="hr" />

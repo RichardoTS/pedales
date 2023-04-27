@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/AppContext";
 
-export default function Contacto() {
+export const Contacto = () => {
   const { store, actions } = useContext(Context);
 
   return (
@@ -25,11 +25,11 @@ export default function Contacto() {
                   className="form-check-input"
                   type="radio"
                   name="tipos_id"
-                  id="flexRadioDefault1"
+                  id="Noticia"
                   value={store.tipos_id}
                   onChange={actions.handleChange}
                 />
-                <label className="form-check-label" htmlFor="flexRadioDefault1">
+                <label className="form-check-label" for="Noticia">
                   Noticia
                 </label>
               </div>
@@ -38,14 +38,14 @@ export default function Contacto() {
                   className="form-check-input"
                   type="radio"
                   name="tipos_id"
-                  id="flexRadioDefault2"
+                  id="Evento"
                   checked
                   value={store.tipos_id}
                   onChange={actions.handleChange}
                 />
                 <label
                   className="form-check-label fs-5"
-                  htmlFor="flexRadioDefault2"
+                  for="Evento"
                 >
                   Evento
                 </label>
@@ -55,13 +55,13 @@ export default function Contacto() {
                   className="form-check-input"
                   type="radio"
                   name="tipos_id"
-                  id="flexRadioDefault3"
+                  id="Mensaje"
                   value={store.tipos_id}
                   onChange={actions.handleChange}
                 />
                 <label
-                  className="htmlForm-check-label fs-5"
-                  htmlFor="flexRadioDefault3"
+                  className="form-check-label fs-5"
+                  for="Mensaje"
                 >
                   Mensaje
                 </label>
@@ -83,7 +83,7 @@ export default function Contacto() {
                 />
                 <label
                   className="form-check-label"
-                  htmlFor="#recipientCiclista"
+                  for="recipientCiclista"
                 >
                   Ciclista
                 </label>
@@ -99,7 +99,7 @@ export default function Contacto() {
                 />
                 <label
                   className="form-check-label"
-                  htmlFor="#recipientMecanico"
+                  for="recipientMecanico"
                 >
                   Mecánico
                 </label>
@@ -173,7 +173,7 @@ export default function Contacto() {
                 id="customFile"
                 value={store.data}
                 onChange={actions.handleChange} //aqui se debe cambiar la forma de capturar el file
-                //habria que probar si 1° esto resulta
+              //habria que probar si 1° esto resulta
               />
             </div>
           </div>

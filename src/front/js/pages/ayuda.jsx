@@ -1,9 +1,10 @@
+import React from 'react';
 import Formulario from '../../img/formContacto.jpeg'
 import Vista from '../../img/vistaTienda.jpeg'
 import Comunidad from '../../img/comunidad.jpg'
 
-export default function Ayuda() {
-    return (
+export const Ayuda = () => {
+        return (
         <div classNameName="text-center mb-4 text-black">
             <h1 classNameName="display-3">Ayuda</h1>
             <br></br>

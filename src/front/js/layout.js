@@ -6,11 +6,12 @@ import { BackendURL } from "./component/backendURL";
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 //import { Contacto } from "./component/Pagescontacto";
-import { Contacto } from "./pages/contacto";
-import { Tienda } from "./pages/Tienda";
-import { Noticias } from "./pages/Noticias";
-import { Eventos } from "./pages/Eventos";
-import { Ayuda } from "./pages/Ayuda";
+import { Contacto } from "./pages/contacto.jsx";
+import { Tienda } from "./pages/Tienda.jsx";
+import Maps  from "./pages/Maps.jsx";
+import { Noticias } from "./pages/noticias.jsx";
+import Eventos from "./pages/eventos.jsx";
+import { Ayuda } from "./pages/ayuda.jsx";
 import { Single } from "./pages/single";
 import injectContext from "./store/AppContext";
 
@@ -34,13 +35,12 @@ const Layout = () => {
           <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<Home />} path="/home" />
-            <Route element={<Tienda />} path="/tienda" />
+            <Route element={<Tienda />} path="/Tienda" />
+            <Route element={<Maps />} path="/Maps" />
             <Route element={<Noticias />} path="/noticias" />
             <Route element={<Eventos />} path="/eventos" />
             <Route element={<Contacto />} path="/contacto" />
             <Route element={<Ayuda />} path="/ayuda" />
-            {<Route element={<Contacto />} path="/contacto" />}
-
             {/*<Route element={<Contacto />} path="/Pagescontacto" />*/}
             <Route element={<Single />} path="/single/:theid" />
             <Route element={<h1>Not found!</h1>} />
