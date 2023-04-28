@@ -16,14 +16,13 @@ const getState = ({ getStore, getActions, setStore }) => {
       data: null,
       contacto: null,
       error: null,
+      checked: true
     },
     actions: {
       //funcion generica que captura la info desde inputs
       handleChange: (e) => {
-        const { name, value } = e.target;
-        setStore({
-          [name]: value,
-        });
+        const { value } = e.target;
+        e.target.checked
         console.log("all", getStore());
       },
       //funcion unica para el form de contacto

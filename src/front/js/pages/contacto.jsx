@@ -12,7 +12,7 @@ export const Contacto = () => {
 
         {/* form container 4 whole body */}
         <form
-          className="col-12 mt-1 px-5 position-relative"
+          className="form-check col-12 mt-1 px-5 position-relative"
           onSubmit={actions.handleSubmiContacto}
         >
           {/* row 4 first filter: service type + event public (optional) */}
@@ -20,24 +20,24 @@ export const Contacto = () => {
             {/* half row: service type */}
             <div className="col-6 text-start">
               <h3>Seleccione tipo de servicio</h3>
-              <div className="form-group container-fluid">
+              <div className="container-fluid">
 
                 <div className="form-check ms-2 my-1 fs-5">
-                  <input className="form-check-input" type="radio" name="servicio" id="Noticia" value={store.tipos_id}  />
+                  <input className="form-check-input" type="radio" name="servicio" id="Noticia" value={1} onChange={actions.handleChange} />
                   <label className="form-check-label" for="Noticia">
                     Noticia
                   </label>
                 </div>
 
                 <div className="form-check ms-2 my-1 fs-5">
-                  <input className="form-check-input" type="radio" name="servicio" id="Evento" checked value={store.tipos_id} />
+                  <input className="form-check-input" type="radio" name="servicio" id="Evento"  value={2} onChange={actions.handleChange} />
                   <label className="form-check-label fs-5" for="Evento">
                     Evento
                   </label>
                 </div>
 
                 <div className="form-check ms-2 my-1 fs-5">
-                  <input className="form-check-input" type="radio" name="servicio" id="Mensaje" value={store.tipos_id} />
+                  <input className="form-check-input" type="radio" name="servicio" id="Mensaje" value={3} onChange={actions.handleChange} />
                   <label className="form-check-label fs-5" for="Mensaje" >
                     Mensaje
                   </label>
